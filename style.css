@@ -1,0 +1,414 @@
+body{
+	margin: 0px;
+}
+#body-header{
+	background-image: url("photo2.jpg");
+	height: 65vh;
+	opacity: 0.8;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Header*/
+
+.horizontal-list{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.text-center{
+	text-align: center;
+}
+.horizontal-list li{
+	display: inline-block;
+	margin: 20px 10px 10px 0px;
+	font-size: 1.8rem;	
+}
+.horizontal-list li a{
+	text-decoration: none;
+	color: #4e3535;
+	transition: color 0.5s;
+}
+.horizontal-list li a:hover{
+	color: white;
+}
+
+
+#body-header h1{
+	position: relative;
+	top: 80px;
+	font-size: 4rem;
+	color: white;
+	font-weight: 700;
+
+}
+
+#icons{
+	position: relative;
+	top: 30px;
+
+}
+
+#icons li a i{
+	padding: 10px;
+	border-radius: 50%;
+}
+
+#icons li a i:hover{
+	box-shadow: 0px 0px 8px 6px grey;
+}
+
+/*About*/
+#About{
+	position: relative;
+}
+#myimage{
+	margin-: auto;
+	width: 16%;
+	height: 25vh;
+	margin-top: -12vh;
+}
+#About img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px 6px #c9bfbf;
+}
+
+#About p{
+	font-size: 1.5rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+}
+
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section:nth-child(2n){
+ background-color: #f1ebeb;
+}
+section:nth-child(2n+1){
+ background-color: white;
+}
+.section-heading{
+	width: auto;
+	margin: 10px auto;
+	padding: 20px;
+	text-align: center;
+}
+.section-heading span{
+	font-size: 3rem;
+	color: #2a5fd9;
+	margin-left: 1rem;
+}
+
+/*SKILLS*/
+
+.skills-display{
+	width: 70%;
+	/*height: 100px;
+	border: 2px solid black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.skill-progress{
+	width: 10rem;
+	height: 2rem;
+	background-color: #bfadad;
+	border-radius: 0.8rem ;
+	margin: 2rem;
+	box-shadow: 0px 0px 15px 6px #c9bfbf;
+}
+.skill-progress>div{
+	border-radius:0.8rem 0rem 0rem 0.8rem;
+	height: inherit;
+}
+
+.skill-name{
+	padding: 10px;
+	font-size: 1.4rem;
+	color: white;
+	margin-left: 5px;
+}
+
+.skill-one{
+	background-color:#9f9bdd ;
+	width: 85%;
+}
+.skill-two{
+	background-color:#94b3bd ;
+	width: 85%;
+}
+.skill-three{
+	background-color:#9f9bdd ;
+	width: 75%;
+}
+.skill-four{
+	background-color:#94b3bd ;
+	width: 80%;
+}
+.skill-five{
+	background-color:#9f9bdd ;
+	width: 70%;
+}
+.skill-six{
+	background-color:#94b3bd ;
+	width: 70%;
+}
+.skill-seven{
+	background-color:#9f9bdd ;
+	width: 60%;
+}
+
+/*Experience section*/
+
+.timeline{
+position: relative;
+width: 75%;
+margin-bottom: 5rem;
+}
+
+.timeline-box{
+	position: relative;
+	min-height: 150px;
+	width: 40%;
+	left: 5%;
+	margin: 5px;
+}
+.timeline-box h2{
+	text-align: center;
+	margin-bottom: 0;
+}
+.timeline-box h3{
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top: 40%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	right: -13%;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top: 40%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	left: -8.5%;
+	z-index: 1;
+}
+
+.timeline-divider{
+	position: absolute;
+	height: 75%;
+	width: 0;
+	border: 3px dashed blue;
+	left: 50%;
+	top: 10%;
+}
+
+.timeline-traveller{
+	position: sticky;
+	top: 10%;
+	transform: rotate(90deg);
+	z-index: 2;
+	font-size: 1.5rem;
+}
+
+/*Portfolio*/
+
+
+.flipcard-display{
+	width: 80%;
+	/*height: 100px;
+	border: 2px solid black;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.flipcard{
+	height: 250px;
+	width: 45%;
+	background-color: transparent;
+	border: 2px solid black;
+	perspective: 1000px;
+	margin: 20px;
+	border-radius: 1.7rem;
+}
+.flipcard-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	border-radius: inherit;
+}
+.flipcard:hover .flipcard-inner{
+	transform: rotateY(180deg);
+	box-shadow: 0px 0px 15px 6px #c9bfbf;
+}
+
+.flipcard-front ,.flipcard-back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: inherit;
+}
+
+.flipcard-front{
+	background-color: #dcedea;
+	color: #3c62a9;
+}
+.flipcard-front h2{
+	padding: 85px 0;
+	}
+
+.flipcard-back{
+	background-color: #dcedea;
+	color: #3c62a9;
+	transform: rotateY(180deg);
+}
+
+.flipcard-back h2{
+	padding: 60px 0;
+}
+
+
+/*Contact section*/
+
+#Contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	background-image: -webkit-linear-gradient(120deg,#be62c3,#99e7e7,#128193);
+}
+.myaddress{
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.myaddress > div{
+	width: 35%;
+	height: auto;
+	text-align: center;
+	margin: 0rem 5rem 0rem 5rem;
+}
+#contact-icons li a i{
+	padding: 10px;
+	border-radius: 50%;
+}
+
+#contact-icons li a i:hover{
+	box-shadow: 0px 0px 8px 6px grey;
+}
+.address-list{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.address-list li{
+	margin-bottom: 5px;
+}
+input{
+	display:block;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid black;
+	background: transparent;
+	margin-top: 10px;
+}
+#submit{
+	margin:auto;
+	border-radius: 17%;
+	border: 2px solid black;
+	width: 20%;
+	margin-top: 20px;
+}
+#submit:hover{
+	box-shadow: 0px 0px 8px 6px grey;
+}
+
+
+@media screen and (max-width: 600px){
+	#body-header{
+		height: 50vh;
+
+	}
+	html,body{
+		/*width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;*/
+		font-size: 12px;
+	}
+
+	#navbar {
+		visibility: hidden;
+		display: none !important;
+	}
+	.skills-display{
+		width: 100%;
+	}
+
+	.timeline-box{
+		width: 80%;
+		left: 10% !important;
+	}
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box::after{
+		left: -9% !important; 
+	}
+
+	.flipcard-display{
+		width: 100%;
+	}
+
+	.flipcard{
+		width: 100%;
+		height: 150px;
+	}
+
+	.flipcard-front h2{
+		padding: 40px 0;
+	}
+
+	.flipcard-back h2{
+		padding: 5px 0;
+	}
+
+	.myaddress>div{
+		width: 80%;
+	}
+
+}
